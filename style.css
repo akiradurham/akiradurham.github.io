@@ -1,6 +1,6 @@
 /* General */
 body{
-    background-color: rgb(red, green, blue);
+    background-color: rgb(42, 135, 42);
 }
 /* The emerging W3C standard
    that is currently Firefox-only */
@@ -183,4 +183,9 @@ img {
 
 .float-right {
     float: right;
+}
+
+.bar {
+    height: 10px;
+    background: radial-gradient(circle, rgba(4,205,38,1) 0%, rgba(42,135,42,1) 35%, rgba(0,78,7,1) 100%);
 }

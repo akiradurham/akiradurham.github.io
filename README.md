@@ -1,2 +1,2 @@
 # akiradurham.github.io
-https://akiradurham.github.io/index
+https://akiradurham.github.io/main
