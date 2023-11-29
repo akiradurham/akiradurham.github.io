@@ -8,6 +8,14 @@ body{
     color: black;
 }
 
+.titleblock {
+    text-align: center;
+    font-size: 5em;
+    color: black;
+    height: 100%;
+    width: 100%;
+}
+
 .bar {
     height: 10px;
     background: radial-gradient(circle, rgba(4,205,38,1) 0%, rgba(42,135,42,1) 35%, rgba(0,78,7,1) 100%);
