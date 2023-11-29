@@ -26,8 +26,10 @@ html {
     scroll-behavior: smooth;
 }
 
-down {
+downTitle {
     text-align: center;
+    margin-top: 100%;
+    padding-bottom: 25%;
     color: black;
     font-size: 1em;
 }
