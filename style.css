@@ -10,6 +10,7 @@ body{
 
 .titleblock {
     text-align: center;
+    margin: 0;
     font-size: 3.5em;
     color: black;
     height: 100%vh;
@@ -19,4 +20,23 @@ body{
 .bar {
     height: 10px;
     background: radial-gradient(circle, rgba(4,205,38,1) 0%, rgba(42,135,42,1) 35%, rgba(0,78,7,1) 100%);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+down {
+    text-align: center;
+    color: black;
+    font-size: 1em;
+}
+
+.arrow{
+    border: solid darkslategray;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
