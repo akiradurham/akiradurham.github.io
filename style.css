@@ -77,7 +77,7 @@ body{
     font-size: 1.75em;
     color: white;
     position: absolute;
-    top: 950px;
+    top: 990px;
     left: 5px;
 }
 
@@ -171,7 +171,7 @@ html {
 .line {
     border-top: 1px solid rgb(24, 24, 24);
     position: absolute;
-    top: 825px;
+    top: 855px;
     left: 2.5%;
     width: 95%;
 }
