@@ -65,6 +65,18 @@ body{
     left: 5px;
 }
 
+.skills {
+    font-family: monospace;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-size: 0.5em;
+    color: white;
+    position: absolute;
+    top: 200px;
+    left: 5px;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -112,4 +124,24 @@ html {
 
 .grid-item {
     border: 1px solid white;
+}
+
+.icon-row {
+    max-width: 28%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding-left: 0px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0px;
+    top: 240px;
+}
+
+.icon img {
+    width: 35px;
+    height: auto;
+    filter: grayscale(75%);
+    margin: 0 10px;
 }
