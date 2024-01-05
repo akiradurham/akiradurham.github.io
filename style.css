@@ -14,24 +14,19 @@ body{
 }
 
 .block {
-    text-align: center;
     margin: 0;
     font-size: 3.5em;
     color: white;
-    height: 100%vh;
+    height: 200%vh;
     width: 100%vw;
-    position: relative;
 }
 
 .projects {
-    text-align: center;
     margin: 0;
     font-size: 3.5em;
     color: white;
     height: 100%vh;
     width: 100%vw;
-    position: relative;
-    top: 800px;
 }
 
 .name {
@@ -102,4 +97,19 @@ html {
     padding: 3px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
+}
+
+.grid-container {
+    display: grid;
+    padding: 0;
+    margin: 5%;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 45% 45%;
+    column-gap: 5%;
+    row-gap: 5%;
+    height: 100vh;
+}
+
+.grid-item {
+    border: 1px solid white;
 }
