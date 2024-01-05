@@ -2,6 +2,11 @@ body{
     background-color: black;
 }
 
+@font-face {
+    font-family: blzee;
+    src: url(blzee.ttf);
+}
+
 .copyright {
     text-align: center;
     font-size: 1em;
@@ -19,9 +24,10 @@ body{
 }
 
 .name {
+    font-family: blzee;
     text-align: right;
     margin: 0;
-    font-size: 4em;
+    font-size: 1.5em;
     color: white;
     top: 20px;
     right: 20px;
