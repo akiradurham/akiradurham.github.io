@@ -2,6 +2,13 @@ body{
     background-color: black;
 }
 
+.main_page{
+    color: #fff;
+    background-image: linear-gradient(to bottom, #000000, #3a3136, #6f6271, #a299b5, #ced7ff);
+    /* height: 100%vh; */
+    /* padding-top: 80rem; */
+}
+
 @font-face {
     font-family: blzee;
     src: url(blzee.ttf);
