@@ -2,14 +2,12 @@ body{
     background-color: black;
 }
 
-.main_page{
+.gradient_background{
     color: #fff;
-    background-image: linear-gradient(to bottom, #000000, #3a3136, #6f6271, #a299b5, #ced7ff);
+    background-image: linear-gradient(to bottom, #000000, #2c2a2a4f, #3a3136, #6f6271, #a299b5, #ced7ff);
     width: 70vw;
     margin: 0 auto;
     text-align: center;
-    /* height: 100%vh; */
-    /* padding-top: 80rem; */
 }
 
 @font-face {
@@ -35,6 +33,7 @@ body{
     font-family: blzee;
     font-size: 2.25em;
     color: white;
+    padding-top: 10%;
 }
 
 .contact {
@@ -85,16 +84,19 @@ a {
 }
 
 .text {
+    padding-top: 6%;
     font-family: monospace;
     font-size: 0.35em;
     font-weight: bold;
-    color: rgb(
-        90, 90, 100
-        );
+    color: rgb(153, 153, 168);
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
 }
 
 html {
     scroll-behavior: smooth;
+    color-scheme: dark;
 }
 
 #downTitle {
@@ -187,14 +189,14 @@ html {
     float: left;
     color: #f2f2f281;
     text-align: center;
-    padding: 14px 20px;
+    padding: 16px 20px;
     text-decoration: none;
     font-size: 17px;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #858585;
     color: black;
     text-decoration: underline;
 }
@@ -203,4 +205,64 @@ html {
 .topnav a.active {
     /* background-color: #04AA6D; */
     color: rgb(255, 255, 255);
+}
+
+#menu-icon {
+    font-size: 36px;
+    cursor: pointer;
+    position: absolute;
+    left: 12px;
+}
+
+.hidden-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: -200px; /* Hide sidebar initially */
+    width: 100px;
+    height: 100%;
+    background-color: #333;
+    transition: left 0.8s ease;
+}
+
+#menu-toggle:checked + #menu-icon + #sidebar {
+    left: 0; /* Show sidebar when checkbox is checked */
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar ul li {
+    padding: 10px;
+}
+
+#sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    background-color: #555;
+}
+
+#close-btn {
+    position: absolute;
+    bottom: 20px; /* Adjust button position as needed */
+    left: 20px; /* Adjust button position as needed */
+    padding: 8px 16px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#close-btn:hover {
+    background-color: #555;
 }
