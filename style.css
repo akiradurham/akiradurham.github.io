@@ -5,6 +5,9 @@ body{
 .main_page{
     color: #fff;
     background-image: linear-gradient(to bottom, #000000, #3a3136, #6f6271, #a299b5, #ced7ff);
+    width: 70vw;
+    margin: 0 auto;
+    text-align: center;
     /* height: 100%vh; */
     /* padding-top: 80rem; */
 }
@@ -30,26 +33,14 @@ body{
 
 .name {
     font-family: blzee;
-    text-align: right;
-    margin: 0;
-    padding: 0;
     font-size: 2.25em;
     color: white;
-    position: absolute;
-    top: 0px;
-    right: 30px;
 }
 
 .contact {
     font-family: monospace;
-    text-align: left;
-    margin: 0;
-    padding: 0;
     font-size: 0.5em;
     color: white;
-    position: absolute;
-    top: 0px;
-    left: 5px;
 }
 
 .aboutme {
@@ -95,7 +86,6 @@ a {
 
 .text {
     font-family: monospace;
-    text-align: left;
     font-size: 0.35em;
     font-weight: bold;
     color: rgb(
@@ -175,10 +165,42 @@ html {
     margin: 0 10px;
 }
 
+/* Partition line for decoration */
 .line {
     border-top: 1px solid rgb(24, 24, 24);
     position: absolute;
     top: 865px;
     left: 2.5%;
     width: 95%;
+}
+
+.topnav {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f281;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+    text-decoration: underline;
+}
+
+/* Add a color to the active link */
+.topnav a.active {
+    /* background-color: #04AA6D; */
+    color: rgb(255, 255, 255);
 }
