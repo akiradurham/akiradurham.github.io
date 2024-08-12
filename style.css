@@ -4,10 +4,11 @@ body{
 
 .gradient_background{
     color: #fff;
-    background-image: linear-gradient(to bottom, #000000, #2c2a2a4f, #3a3136, #6f6271, #a299b5, #ced7ff);
+    background-image: linear-gradient(to bottom, #000000, #131212, #3a3136, #6f6271, #a299b5, #ced7ff);
     width: 70vw;
     margin: 0 auto;
     text-align: center;
+    align-items: center;
 }
 
 @font-face {
@@ -17,14 +18,13 @@ body{
 
 .copyright {
     text-align: center;
-    font-size: 1em;
+    font-size: 18px;
     color: grey;
 }
 
 .block {
     margin: 0;
     font-size: 3.5em;
-    color: white;
     height: 200%vh;
     width: 100%vw;
 }
@@ -54,16 +54,34 @@ body{
     left: 5px;
 }
 
-.skills {
+.headers {
     font-family: monospace;
-    text-align: left;
+    text-align: center;
     margin: 0;
     padding: 0;
-    font-size: 0.5em;
+    font-size: 30px;
     color: white;
-    position: absolute;
-    top: 200px;
-    left: 5px;
+}
+
+.col img {
+    width: 100px;
+    height: 100px;
+}
+
+.icon-row {
+    display: flex;
+    max-width: 25%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: auto;
+}
+
+.icon-row .icon img {
+    width: 35px;
+    height: auto;
+    filter: grayscale(75%);
+    margin: 0 10px;
 }
 
 .projects {
@@ -95,7 +113,7 @@ a {
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* TODO: add in links that scroll to other parts of the site */
     color-scheme: dark;
 }
 
@@ -123,7 +141,7 @@ html {
     grid-template-rows: 47% 47%;
     column-gap: 5%;
     row-gap: 10%;
-    height: 60vh;
+    height: 40vh;
 }
 
 .grid-item {
@@ -147,33 +165,10 @@ html {
     height: 100%;
 }
 
-.icon-row {
-    max-width: 25%;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0px;
-    padding-left: 0px;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    left: 0px;
-    top: 240px;
-}
-
-.icon-row .icon img {
-    width: 35px;
-    height: auto;
-    filter: grayscale(75%);
-    margin: 0 10px;
-}
-
 /* Partition line for decoration */
 .line {
     border-top: 1px solid rgb(24, 24, 24);
-    position: absolute;
-    top: 865px;
-    left: 2.5%;
-    width: 95%;
+    width: 100%;
 }
 
 .topnav {
@@ -226,6 +221,7 @@ html {
     left: -200px; /* Hide sidebar initially */
     width: 100px;
     height: 100%;
+    z-index: 1000;
     background-color: #333;
     transition: left 0.8s ease;
 }
@@ -255,8 +251,8 @@ html {
 
 #close-btn {
     position: absolute;
-    bottom: 20px; /* Adjust button position as needed */
-    left: 20px; /* Adjust button position as needed */
+    bottom: 20px;
+    left: 20px;
     padding: 8px 16px;
     color: #fff;
     border: none;
